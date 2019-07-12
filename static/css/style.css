@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+}
+
+ul,li {
+  list-style-type: none;
+}
+
+p {
+  font-family: "FedraSansDevanagariB-Light";
+  margin-bottom: 0;
+}
+
+a {
+  color: #8207ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff4289;
+  text-decoration: none;
+}
+
+body,html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "FedraSansDevanagariB-Demi";
+  src: url("../fonts/FedraSansDevanagariB-Demi.eot");
+  src: local("FedraSansDevanagariB-Demi");
+  src: url("../fonts/FedraSansDevanagariB-Demi.svg#bingo") format("svg");
+  src: url("../fonts/FedraSansDevanagariB-Demi.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "FedraSansDevanagariB-Medium";
+  src: url("../fonts/FedraSansDevanagariB-Medium.eot");
+  src: local("FedraSansDevanagariB-Medium");
+  src: url("../fonts/FedraSansDevanagariB-Medium.svg#bingo") format("svg");
+  src: url("../fonts/FedraSansDevanagariB-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "FedraSansDevanagariB-Bold";
+  src: url("../fonts/FedraSansDevanagariB-Bold.eot");
+  src: local("FedraSansDevanagariB-Bold");
+  src: url("../fonts/FedraSansDevanagariB-Bold.svg#bingo") format("svg");
+  src: url("../fonts/FedraSansDevanagariB-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "FedraSansDevanagariB-Light";
+  src: url("../fonts/FedraSansDevanagariB-Light.eot");
+  src: local("FedraSansDevanagariB-Light");
+  src: url("../fonts/FedraSansDevanagariB-Light.svg#bingo") format("svg");
+  src: url("../fonts/FedraSansDevanagariB-Light.otf") format("opentype");
+}
+
+.headingBox {
+  color: #fff;
+  font-family: "FedraSansDevanagariB-Bold";
+  font-size: 18px;
+  letter-spacing : 1px;
+  display:inline-block;
+  padding : 2px 8px;
+  margin: 20px 0;
+}
+
+.headingBox.pinkC {
+  background: #ff4289;
+}
+
+.headingBox.levendorC {
+  background: #8207ff;
+}
+
+.wrapper {
+  display: block;
+}
+
+header {
+  background: #ffe559;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+}
+
+header .container {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu ul {
+  margin-bottom: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding : 0 20px;
+}
+
+.menu ul li a {
+  font-family: "FedraSansDevanagariB-Demi";
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.home-content {
+  padding: 20px 0;
+}
+
+.home-content p {
+  font-size: 20px;
+}
+
+.home-content p span {
+  font-family: "FedraSansDevanagariB-Demi";
+}
+
+.service {
+  margin: 20px 0 50px;
+}
+
+.video-intro {
+  margin-top: 20px;
+}
+
+.video-intro p {
+  border-bottom : 3px solid #ffe559;
+  font-family: "FedraSansDevanagariB-Medium";
+  font-size: 19px;
+  padding-bottom: 15px;
+}
+
+.service-content p {
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #ffe559;
+  display: block;
+  padding: 20px 0;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-reserve p {
+  margin: 10px 0 0;
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:46.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.terms-condition p {
+  margin-bottom: 15px;
+}
+
+.terms-condition p span {
+  font-family: "FedraSansDevanagariB-Demi";
+}
+
+.terms-condition .sub-heading {
+  margin-bottom: 12px;
+  font-family: "FedraSansDevanagariB-Demi";
+}
+
+.terms-condition ul li {
+  position: relative;
+  margin-bottom: 8px;
+  font-family: "FedraSansDevanagariB-Light";
+  padding-left: 20px;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.terms-condition ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-size: 16px;
+  background: black;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+
+@media screen and (max-width: 576px){
+  p {
+    font-size: 16px;
+  }
+
+  .home-content p {
+      font-size: 16px;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+  .logo {
+    left: 15px;
+  }
+
+  .logo img {
+    width: 60%;
+  }
+
+  .menu {
+    text-align: right;
+  }
+
+  .menu ul li a {
+    font-size: 18px;
+  }
+
+  .service {
+    margin: 0;
+  }
+
+  .video-intro p {
+    font-size: 16px;
+  }
+
+  .terms-condition ul li {
+    font-size: 14px;
+  }
+
+  .terms-condition ul li::before {
+    top: 8px;
+  }
+
+  footer {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  p {
+    font-size: 14px;
+  }
+
+  .headingBox,
+  .video-intro p {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  .logo img {
+    width: 50%;
+  }
+
+  .menu ul li a {
+    font-size: 14px;
+  }
+
+  .logo-fo img {
+    width: 40%;
+  }
+}
